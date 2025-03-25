@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		html, body{
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		#this_is_id{
+			width: 50vw;
+			height: 30vw;
+			background: orange;
+			text-align: center;
+		}
+		#title_id{
+			padding-top: 1vw;
+			font-size: 4vw;
+			font-family: "Yu Gothic";
+		}
+		#account_input_id{
+			margin-top: 3vw;
+			font-size: 3.5vw;
+			font-family: cursive;
+		}
+		#password_input_id{
+			margin-top: 5vw;
+			font-size: 3vw;
+		}
+		button{
+			margin-top: 2vw;
+			background: lightblue;
+			font-size: 3vw;
+		}
+	</style>
+	<script type="text/javascript">
+		function login() {
+			var account = document.getElementById('account_input_id').value;
+			var password = document.getElementById('password_input_id').value;
+
+			if ("m" == account && "0" == password) {
+
+				location.href = "file:///C:/Users/40461/OneDrive/Desktop/programming/Max's%20Homework.html"
+			}else{
+				alert("no entre");
+				document.getElementById('account_input_id').value = "";
+				document.getElementById('password_input_id').value = "";
+			}
+			
+		}
+	</script>
+</head>
+<body>
+	<div id="this_is_id">
+		<div id="title_id">XXX video game</div>
+	<div>
+		<input type="" id="account_input_id" placeholder="name">
+	</div>
+	<div>
+		<input type="password" id="password_input_id" placeholder="password">
+	</div>
+	<button onclick="login()">sign</button>
+	</div>
+</body>
+</html>
